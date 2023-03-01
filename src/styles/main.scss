@@ -19,16 +19,21 @@
     margin: 0 auto;
 
     &--final{
-        background-color: variables.$corFundo;
-
         h2{
-            color: variables.$textColor;
+            color: variables.$secondaryTextColor;
             font-weight: bold;
             font-size: 25px;
+            margin-top: 25px;
+            margin-bottom: 24px;
+            text-align: center;
+            text-decoration: underline;
         }
 
         p{
-            color: variables.$textColor;
+            color: variables.$secondaryTextColor;
+            font-size: 17px;
+            text-align: left;
+            font-weight: bold;
         }
     }
 
