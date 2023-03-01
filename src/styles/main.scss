@@ -1,0 +1,42 @@
+@use 'hero';
+@use '../styles/variables';
+@use '../styles/components/infos_bar';
+@use '../styles/components/buttons';
+@use './event';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    &--final{
+        background-color: variables.$corFundo;
+
+        h2{
+            color: variables.$textColor;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        p{
+            color: variables.$textColor;
+        }
+    }
+
+    @media (max-width: 640px){
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px){
+        max-width: 90%;
+    }
+}
